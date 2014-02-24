@@ -1,14 +1,28 @@
+National Museum 360 Viewer
 
 
-Extract video frames to lossless PNG
-    avconv -i Lewis_Chessmen_Queen_00042.MTS -r 1 -vsync 1 -filter:v "crop=560:740:680:190" -qscale:v 1 -f image2 images/chess-%03d.png
+REQUIREMENTS
 
-Convert and optmize images
+    * nodejs
 
 
-# Sharpened
-mogrify -path optimized/ -format jpg -unsharp 0.7x0.7+1+0 -strip -quality 70 ./images/*.png
+GETTING STARTED
 
-# Make vertical strip
-# +append (top - bottom) -append (left - right)
-convert image1.jpg image2.jpg +append output.jpg
+    > git clone git@github.com:GuardianInteractive/national-museum-360.git
+    > cd national-museum-360
+    > npm install
+    > grunt
+
+DEVELOPER DEPENDENCIES
+
+    * imagemagick
+    * avconv (or ffmpeg)
+
+EXTRACTING VIDEO FRAMES
+
+    > avconv -i Lewis_Chessmen_Queen_00042.MTS -r 1 -vsync 1 -filter:v "crop=560:740:680:190" -qscale:v 1 -f image2 images/chess-%03d.png
+
+
+RESIZE AND OPTIMIZE IMAGES
+
+    > mogrify -path optimized/ -format jpg -unsharp 0.7x0.7+1+0 -strip -quality 70 ./images/*.png
