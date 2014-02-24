@@ -6,4 +6,9 @@ Extract video frames to lossless PNG
 Convert and optmize images
 
 
-mogrify -path optimized/ -format jpg -unsharp 0.7x0.7+1.5+0 -strip -quality 70 ./images/*.png
+# Sharpened
+mogrify -path optimized/ -format jpg -unsharp 0.7x0.7+1+0 -strip -quality 70 ./images/*.png
+
+# Make vertical strip
+# +append (top - bottom) -append (left - right)
+convert image1.jpg image2.jpg +append output.jpg
