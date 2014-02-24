@@ -1,14 +1,18 @@
-
+// 560 x 740
 
 
 var width = $('.threesixty').width();
-$('.threesixty').css('padding-bottom', width * 1.32142);
+//$('.threesixty').css('padding-bottom', width * 1.32142);
 var height = $('.threesixty').outerHeight();
 console.log(height);
 
-$('.threesixty').threesixty({
-    dragAxis: 'x',
-    spriteDim: { x: width, y: height },
-    spriteSheetDim: { x: width, y: 28860 },
-    sensitivity: 3
+width = '560';
+height = '740';
+
+$(document).on('setup',function(e) {
+    $(e.target).parent().next('.click2play').hide();
 });
+
+var $click2Play = $('<div class="click2play">Tap / click to load 360 rotation</div>');
+
+$('.reel').after($click2Play);
