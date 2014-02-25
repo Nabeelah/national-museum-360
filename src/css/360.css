@@ -9,14 +9,15 @@ body{
 }
 
 .image_360_wrapper {
-    max-width: 560px;
+    max-width: 640px;
     margin: 0 auto 80px;
     cursor: pointer;
     position: relative;
+    text-align: center;
 }
 
 #wrapper img {
-    width: 100%;
+
 }
 
 #wrapper .reel-preloader {
@@ -24,6 +25,16 @@ body{
     height: 3px;
     bottom: inherit;
     top: 0;
+}
+
+#wrapper .reel img,
+#wrapper .reel {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    width: auto;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 #wrapper h2{
@@ -42,7 +53,7 @@ body{
     width:620px;
     margin:0 auto 0;
     line-height:1.5em;
-   
+
 }
 
 .click2play {
