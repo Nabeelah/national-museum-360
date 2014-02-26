@@ -4,8 +4,9 @@ body{
 #wrapper {
     /*max-width: 960px;*/
     background: #000;
-    padding-top:50px;
-     -webkit-font-smoothing:antialiased;
+    padding:50px 10px;
+    -webkit-font-smoothing:antialiased;
+    margin: 0 auto;
 }
 
 .image_360_wrapper {
@@ -16,9 +17,6 @@ body{
     text-align: center;
 }
 
-#wrapper img {
-
-}
 
 #wrapper .reel-preloader {
     background-color: rgb(29, 128, 255);
@@ -41,7 +39,6 @@ body{
     color:#fff;
     font-size:20px;
     line-height: 1.5em;
-    width:620px;
     margin:0 auto;
     font-family: "Guardian Egyptian Headline", Georgia, serif;
 }
@@ -50,13 +47,12 @@ body{
     color: #fff;
     font-family: "Guardian Egyptian Headline", Georgia, serif;
     font-size:18px;
-    width:620px;
     margin:0 auto 0;
     line-height:1.5em;
-
 }
 
 .click2play {
+    pointer-events:none;
     position: absolute;
     top: 50%;
     width: 60%;
