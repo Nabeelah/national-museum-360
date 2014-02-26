@@ -1,0 +1,67 @@
+body{
+    margin:0;
+}
+#wrapper {
+    /*max-width: 960px;*/
+    background: #000;
+    padding:50px 10px;
+    -webkit-font-smoothing:antialiased;
+    margin: 0 auto;
+}
+
+.image_360_wrapper {
+    max-width: 640px;
+    margin: 0 auto 80px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+
+#wrapper .reel-preloader {
+    background-color: rgb(29, 128, 255);
+    height: 3px;
+    bottom: inherit;
+    top: 0;
+}
+
+#wrapper .reel img,
+#wrapper .reel {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#wrapper h2{
+    color:#fff;
+    font-size:20px;
+    line-height: 1.5em;
+    margin:0 auto;
+    font-family: "Guardian Egyptian Headline", Georgia, serif;
+}
+
+#wrapper p{
+    color: #fff;
+    font-family: "Guardian Egyptian Headline", Georgia, serif;
+    font-size:18px;
+    margin:0 auto 0;
+    line-height:1.5em;
+}
+
+.click2play {
+    pointer-events:none;
+    position: absolute;
+    top: 50%;
+    width: 20%;
+    left: 40%;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.4);
+    color: rgb(255,255,255);
+    text-align: center;
+    font-size: 16px;
+    font-family:Arial;
+    font-weight:bold;
+}
