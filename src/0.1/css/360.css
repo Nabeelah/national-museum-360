@@ -29,7 +29,6 @@ body{
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-
     display: block;
     margin: 0 auto;
 }
@@ -56,25 +55,36 @@ body{
 #wrapper p{
     color: #fff;
     font-family: "Guardian Egyptian Headline", Georgia, serif;
-    font-size:18px;
+    font-size:16px;
     margin:0 auto 0;
     line-height:1.5em;
 }
 
+#wrapper p, #wrapper header{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:620px;
+}
+
+#wrapper header p{
+    width:100%;
+}
+
 
 .arrow-left {
-    width:50px;
-    height:40px;
-    position: absolute;
     left:20px;
-    top:45%;
     background:url(../images/assets/arrow-left.png) no-repeat;
-    opacity:0.5;
-    z-index: 10;
-    pointer-events:none;
 }
 
 .arrow {
+    z-index: 10;
+    pointer-events:none;
+    opacity:0.5;
+    top:45%;
+    width:25px;
+    height:47px;
+    position: absolute;
     transition: opacity 0.2s ease-in-out;
     -moz-transition: opacity 0.2s ease-in-out;
     -webkit-transition: opacity 0.2s ease-in-out;
@@ -86,15 +96,11 @@ body{
 }
 
 .arrow-right{
-    width:50px;
-    height:50px;
+    
     background:url(../images/assets/arrow-right.png) no-repeat;
-    position:absolute;
+    
     right:20px;
-    top:45%;
-    opacity: 0.5;
-    pointer-events:none;
-    z-index: 10;
+    
 }
 
 .click2play {
@@ -114,4 +120,14 @@ body{
 
 .single_item header {
     margin-bottom: 10px;
+}
+
+@media (min-width:480px){
+ #wrapper p{
+        font-size:18px;
+     }
+    }
+
+@media (min-width:940px){
+
 }
