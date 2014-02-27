@@ -2,10 +2,16 @@ $(document).on('setup',function(e) {
     $(e.target).parent().next('.click2play').hide();
 });
 
-var spinElms = $('.reel');
-var $click2Play = $('<div class="click2play">Tap / click to load 360 rotation</div>');
 
-$('.reel').after($click2Play);
+var $arrowRight = $('<div class="arrow-right"></div>');
+var $arrowLeft = $('<div class="arrow-left"></div>');
+$('.reel').before($arrowLeft);
+$('.reel').after($arrowRight);
+// var $click2Play = $('<div class="click2play">Tap / click to load 360 rotation</div>');
+// $('.reel').after($click2Play);
+
+var spinElms = $('.reel');
+
 
 function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
@@ -33,3 +39,4 @@ checkInView();
 
 // Set parent iframe height
 iframeMessenger.enableAutoResize();
+
