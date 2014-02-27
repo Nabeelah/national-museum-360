@@ -22,17 +22,34 @@ body{
     height: 6px;
     bottom: inherit;
     top: 0;
+    overflow: visible;
 }
 
-#wrapper .reel img,
-#wrapper .reel {
+#wrapper .reel-preloader::after {
+    content: 'Loading 360...';
+    position: absolute;
+    color: #FFF;
+    text-align: left;
+    width: 300px;
+    left: 0;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    top: 9px;
+}
+
+#wrapper .reel img {
     max-width: 100%;
     height: auto;
-    margin: 0 auto;
-
     display: block;
-    margin: 0 auto;
 }
+
+#wrapper .reel {
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    overflow: visible;
+}
+
 
 
 #wrapper .image_360_wrapper,
@@ -66,7 +83,7 @@ body{
     width:50px;
     height:40px;
     position: absolute;
-    left:20px;
+    left: -20px;
     top:45%;
     background:url(../images/assets/arrow-left.png) no-repeat;
     opacity:0.5;
@@ -90,7 +107,7 @@ body{
     height:50px;
     background:url(../images/assets/arrow-right.png) no-repeat;
     position:absolute;
-    right:20px;
+    right: -40px;
     top:45%;
     opacity: 0.5;
     pointer-events:none;
