@@ -22,16 +22,36 @@ body{
     height: 6px;
     bottom: inherit;
     top: 0;
+    overflow: visible;
 }
 
-#wrapper .reel img,
-#wrapper .reel {
+#wrapper .reel-preloader::after {
+    content: 'Loading 360...';
+    position: absolute;
+    color: #FFF;
+    text-align: left;
+    width: 300px;
+    left: 0;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    top: 9px;
+}
+
+#wrapper .reel img {
     max-width: 100%;
     height: auto;
-    margin: 0 auto;
+
     display: block;
-    margin: 0 auto;
 }
+
+#wrapper .reel {
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    overflow: visible;
+
+}
+
 
 
 #wrapper .image_360_wrapper,
@@ -72,18 +92,15 @@ body{
 }
 
 
-.arrow-left {
-    left:20px;
-    background:url(../images/assets/arrow-left.png) no-repeat;
-}
+
 
 .arrow {
     z-index: 10;
     pointer-events:none;
-    opacity:0.5;
+    opacity:0.2;
     top:45%;
-    width:25px;
-    height:47px;
+    width:37px;
+    height:64px;
     position: absolute;
     transition: opacity 0.2s ease-in-out;
     -moz-transition: opacity 0.2s ease-in-out;
@@ -95,12 +112,14 @@ body{
     opacity: 1;
 }
 
+.arrow-left {
+    left:0;
+    background:url(../images/assets/arrow-left.png) no-repeat;
+}
+
 .arrow-right{
-    
     background:url(../images/assets/arrow-right.png) no-repeat;
-    
-    right:20px;
-    
+    right: 0; 
 }
 
 .click2play {
@@ -123,11 +142,19 @@ body{
 }
 
 @media (min-width:480px){
- #wrapper p{
+    #wrapper p{
         font-size:18px;
-     }
     }
+    
+}
 
 @media (min-width:940px){
+    
+    .arrow-left {
+        left:-20px;
+    }
 
+    .arrow-right{
+        right: -20px; 
+    }
 }
