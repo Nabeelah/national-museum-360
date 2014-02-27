@@ -19,8 +19,8 @@ body{
 
 
 #wrapper .reel-preloader {
-    background-color: rgb(29, 128, 255);
-    height: 3px;
+    background-color: rgb(193,165,125);
+    height: 6px;
     bottom: inherit;
     top: 0;
 }
