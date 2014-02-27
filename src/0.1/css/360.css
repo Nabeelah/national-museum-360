@@ -61,11 +61,8 @@ body{
     line-height:1.5em;
 }
 
-.image_360_wrapper:hover .arrow-left, .image_360_wrapper:hover .arrow-right{
-    opacity:1;
-}
 
-.arrow-left{
+.arrow-left {
     width:50px;
     height:40px;
     position: absolute;
@@ -73,7 +70,19 @@ body{
     top:45%;
     background:url(../images/assets/arrow-left.png) no-repeat;
     opacity:0.5;
-    -webkit-transition: opacity 0.5s;
+    z-index: 10;
+    pointer-events:none;
+}
+
+.arrow {
+    transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+}
+
+.image_360_wrapper:hover .arrow {
+    opacity: 1;
 }
 
 .arrow-right{
@@ -83,8 +92,9 @@ body{
     position:absolute;
     right:20px;
     top:45%;
-    opacity:0.5;
-    -webkit-transition: opacity 0.5s;
+    opacity: 0.5;
+    pointer-events:none;
+    z-index: 10;
 }
 
 .click2play {
