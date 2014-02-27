@@ -51,6 +51,7 @@ body{
     overflow: visible;
     width: inherit;
     height: inherit;
+    max-width: 100%;
 }
 
 
