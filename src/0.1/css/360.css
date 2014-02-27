@@ -111,3 +111,7 @@ body{
     font-family:Arial;
     font-weight:bold;
 }
+
+.single_item header {
+    margin-bottom: 10px;
+}
