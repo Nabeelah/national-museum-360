@@ -48,6 +48,8 @@ body{
     display: inline-block;
     position: relative;
     overflow: visible;
+    width: inherit;
+    height: inherit;
 }
 
 
