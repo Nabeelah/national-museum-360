@@ -14,6 +14,7 @@ body{
     cursor: pointer;
     position: relative;
     text-align: center;
+    overflow: hidden;
 }
 
 
@@ -50,6 +51,9 @@ body{
     position: relative;
     overflow: visible;
 
+    width: inherit;
+    height: inherit;
+    max-width: 100%;
 }
 
 
@@ -87,12 +91,21 @@ body{
     max-width:620px;
 }
 
+
 #wrapper header p{
     width:100%;
 }
-
-
-
+.arrow-left {
+    width:50px;
+    height:40px;
+    position: absolute;
+    left: 0;
+    top:45%;
+    background:url(../images/assets/arrow-left.png) no-repeat;
+    opacity:0.5;
+    z-index: 10;
+    pointer-events:none;
+}
 
 .arrow {
     z-index: 10;
@@ -112,15 +125,16 @@ body{
     opacity: 1;
 }
 
-.arrow-left {
-    left:0;
-    background:url(../images/assets/arrow-left.png) no-repeat;
-}
-
 .arrow-right{
     background:url(../images/assets/arrow-right.png) no-repeat;
-    right: 0; 
+    position:absolute;
+    right: 0;
+    top:45%;
+    opacity: 0.5;
+    pointer-events:none;
+    z-index: 10;
 }
+
 
 .click2play {
     pointer-events:none;
