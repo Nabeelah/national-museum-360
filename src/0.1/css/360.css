@@ -9,6 +9,12 @@ body{
     margin: 0 auto;
 }
 
+@media (min-width: 600px) {
+    #wrapper {
+        padding: 50px 60px;
+    }
+}
+
 .image_360_wrapper {
     margin: 20px auto 120px;
     cursor: pointer;
