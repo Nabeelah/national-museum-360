@@ -23,6 +23,6 @@ EXTRACTING VIDEO FRAMES
     > avconv -i videos/video_file.MTS -r 1 -vsync 1 -filter:v "crop=w:h:x:y" -qscale:v 1 -f image2 images/filename-%03d.png
 
 
-RESIZE AND OPTIMIZE IMAGES
+RESIZE, CUT OUT AND OPTIMIZE IMAGES
 
-    > mogrify -path src/images/path/ -format jpg -unsharp 0.7x0.7+0.6+0 -strip -interlace Plane -resize x640 -filter Lanczos -quality 55% -black-threshold 4% ./images/input/*.png
+    > mogrify -path src/images/out/ -format jpg -fill black -fuzz 5% -floodfill +1+1 black -unsharp 0.7x0.7+0.6+0 -strip -interlace Plane -resize x640 -filter Lanczos -quality 55% ./images/in/*.png
