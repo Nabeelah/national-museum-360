@@ -1,20 +1,15 @@
-// $(document).on('setup',function(e) {
-//     $(e.target).parent().next('.click2play').hide();
-// });
-
-
-
+// Build arrow DOM
 var $arrowRight = $('<div class="arrow-right arrow"></div>');
 var $arrowLeft = $('<div class="arrow-left arrow"></div>');
 
 
-
-
+// Add arrows after load
 setTimeout(function() {
     $('.reel-overlay').prepend($arrowLeft);
     $('.reel-overlay').append($arrowRight);
 }, 200);
 
+// Trigger click to start loading on touch/mousedown
 var spinElms = $('.reel');
 spinElms.on('mousedown touchstart', function() {
     $(this).trigger('click');
@@ -23,4 +18,3 @@ spinElms.on('mousedown touchstart', function() {
 
 // Set parent iframe height
 iframeMessenger.enableAutoResize();
-
