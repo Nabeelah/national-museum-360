@@ -1,0 +1,102 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.3.5
+3 info using node@v0.10.15
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/sclarke/code/national-museum-360',
+5 verbose install   [ 'grunt', 'grunt-contrib-connect' ] ]
+6 info preinstall national-museum-360@0.0.1
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'grunt@^0.4.2', null ]
+9 verbose cache add name=undefined spec="grunt@^0.4.2" args=["grunt@^0.4.2",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'grunt@^0.4.2',
+10 verbose parsed url   path: 'grunt@^0.4.2',
+10 verbose parsed url   href: 'grunt@^0.4.2' }
+11 verbose cache add name="grunt" spec="^0.4.2" args=["grunt","^0.4.2"]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: '^0.4.2',
+12 verbose parsed url   path: '^0.4.2',
+12 verbose parsed url   href: '^0.4.2' }
+13 verbose addNamed [ 'grunt', '^0.4.2' ]
+14 verbose addNamed [ null, null ]
+15 verbose cache add [ 'grunt-contrib-connect@^0.7.0', null ]
+16 verbose cache add name=undefined spec="grunt-contrib-connect@^0.7.0" args=["grunt-contrib-connect@^0.7.0",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'grunt-contrib-connect@^0.7.0',
+17 verbose parsed url   path: 'grunt-contrib-connect@^0.7.0',
+17 verbose parsed url   href: 'grunt-contrib-connect@^0.7.0' }
+18 verbose cache add name="grunt-contrib-connect" spec="^0.7.0" args=["grunt-contrib-connect","^0.7.0"]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: '^0.7.0',
+19 verbose parsed url   path: '^0.7.0',
+19 verbose parsed url   href: '^0.7.0' }
+20 verbose addNamed [ 'grunt-contrib-connect', '^0.7.0' ]
+21 verbose addNamed [ null, null ]
+22 silly lockFile 7b7c3ed4-grunt-0-4-2 grunt@^0.4.2
+23 verbose lock grunt@^0.4.2 /Users/sclarke/.npm/7b7c3ed4-grunt-0-4-2.lock
+24 silly lockFile ad18bfbf-grunt-contrib-connect-0-7-0 grunt-contrib-connect@^0.7.0
+25 verbose lock grunt-contrib-connect@^0.7.0 /Users/sclarke/.npm/ad18bfbf-grunt-contrib-connect-0-7-0.lock
+26 info addNameTag [ 'grunt', '^0.4.2' ]
+27 info addNameTag [ 'grunt-contrib-connect', '^0.7.0' ]
+28 verbose registry.get grunt not expired, no request
+29 silly lockFile 7b7c3ed4-grunt-0-4-2 grunt@^0.4.2
+30 silly lockFile 7b7c3ed4-grunt-0-4-2 grunt@^0.4.2
+31 verbose url raw grunt-contrib-connect
+32 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-connect' ]
+33 verbose url resolved https://registry.npmjs.org/grunt-contrib-connect
+34 info trying registry request attempt 1 at 12:18:36
+35 verbose etag "AK2WT6VF103IE23V3H9QVWL5I"
+36 http GET https://registry.npmjs.org/grunt-contrib-connect
+37 error Error: No compatible version found: grunt@'^0.4.2'
+37 error Valid install targets:
+37 error ["0.1.0","0.1.1","0.1.2","0.2.0","0.2.1","0.2.2","0.2.3","0.2.4","0.2.5","0.2.6","0.2.7","0.2.8","0.2.9","0.2.10","0.2.11","0.2.12","0.2.13","0.2.14","0.2.15","0.3.0","0.3.1","0.3.2","0.3.3","0.3.4","0.3.5","0.3.6","0.3.7","0.3.8","0.3.9","0.3.10","0.3.11","0.3.12","0.3.13","0.3.14","0.3.15","0.3.16","0.3.17","0.4.0","0.4.1","0.4.2","0.3.13-a","0.4.0-a","0.4.0-rc1","0.4.0-rc2","0.4.0-rc3","0.4.0-rc4","0.4.0-rc5","0.4.0-rc6","0.4.0-rc7","0.4.0-rc8"]
+37 error     at installTargetsError (/usr/local/lib/node_modules/npm/lib/cache.js:719:10)
+37 error     at /usr/local/lib/node_modules/npm/lib/cache.js:638:10
+37 error     at RegClient.get_ (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:105:14)
+37 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:41:12)
+37 error     at fs.js:266:14
+37 error     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:103:5
+37 error     at Object.oncomplete (fs.js:107:15)
+38 error If you need help, you may report this log at:
+38 error     <http://github.com/isaacs/npm/issues>
+38 error or email it to:
+38 error     <npm-@googlegroups.com>
+39 error System Darwin 12.5.0
+40 error command "node" "/usr/local/bin/npm" "install"
+41 error cwd /Users/sclarke/code/national-museum-360
+42 error node -v v0.10.15
+43 error npm -v 1.3.5
+44 verbose exit [ 1, true ]
