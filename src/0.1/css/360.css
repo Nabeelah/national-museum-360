@@ -17,9 +17,16 @@ body{
     overflow: hidden;
 }
 
+.single_item a{
+	color:#ffbb00;
+}
+.single_item a:hover{
+	opacity:0.6;
+}
+
 
 #wrapper .reel-preloader {
-    background-color: pink;
+    background-color: #ffbb00;
     height: 6px;
     bottom: inherit;
     top: 0;
